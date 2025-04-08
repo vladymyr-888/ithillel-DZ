@@ -40,7 +40,7 @@ class Group:
                 return student
         return None
     def __str__(self):
-        all_students = ''
+        all_students = '\n'.join(str(student) for student in self.group)
         ...
         return f'Number:{self.number}\\n {all_students} '
 
